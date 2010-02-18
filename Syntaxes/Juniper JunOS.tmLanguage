@@ -28,7 +28,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((Fast|Gigabit)?Ethernet|Serial|Vlan|interfaces|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|Loopback|Null|Port-channel|Virtual-(Access|Dot11Radio|PPP|Template))((\d+[\.:/])*)?\d+\b</string>
+			<string>(ge-|xe-|ae-|lo[0-9])|[0-9]{1,2}/[0-9]{1,2}/[0-9]{1,2}</string>
 			<key>name</key>
 			<string>constant.character.interface.juniper</string>
 		</dict>

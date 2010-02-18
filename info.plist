@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>JunOS</string>
+	<key>uuid</key>
+	<string>8BA60D1F-79D9-4ECD-A59B-3485E506D499</string>
+</dict>
+</plist>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>junos</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>/\*\*|\{\s*$</string>
+	<key>foldingStopMarker</key>
+	<string>\*\*/|^\s*\}</string>
+	<key>name</key>
+	<string>Juniper JunOS</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>(access|^access-profile|^accounting-options|^apply-groups|^chassis|^class-of-service|^demux|^diameter|^ethernet-switching-options|^event-options|^firewall|^forwarding-options|^groups|^interfaces|^jsrc|^jsrc-partition|^poe|^policy-options|^protocols|^routing-instances|^routing-options|^security|^services|^snmp|^system|^virtual-chassis|^vlans)</string>
+			<key>name</key>
+			<string>constant.language.juniper</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}|\h{1,4}\.\h{1,4}\.\h{1,4}(\.\h{1,2})?)\b</string>
+			<key>name</key>
+			<string>constant.numeric.juniper</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b((Fast|Gigabit)?Ethernet|Serial|Vlan|interfaces|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|Loopback|Null|Port-channel|Virtual-(Access|Dot11Radio|PPP|Template))((\d+[\.:/])*)?\d+\b</string>
+			<key>name</key>
+			<string>constant.character.interface.juniper</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(\"|\#\#)\s.*$</string>
+			<key>name</key>
+			<string>comment.documentation.juniper</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(authentication-order|domain-name|host-name|login|name-server|ntp|radius-options|radius-server|root-authentication|services|syslog|time-zone)\b</string>
+			<key>name</key>
+			<string>keyword.other.system.juniper</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.juniper-junos-config</string>
+	<key>uuid</key>
+	<string>D8A26920-EF82-4479-A7FB-E1CBF5A978C5</string>
+</dict>
+</plist>

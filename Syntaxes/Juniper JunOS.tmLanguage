@@ -26,6 +26,24 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b(accounting|apply-groups|apply-groups-except|archival|arp|authentication-order|autoinstallation|backup-router|commit|compress-configuration-files|default-address-selection|domain-name|domain-search|extensions|host-name|inet6-backup-router|internet-options|kernel-replication|license|location|login|max-configurations-on-flash|mirror-flash-on-disk|name-server|no-compress-configuration-files|no-multicast-echo|no-neighbor-learn|no-ping-record-route|no-ping-time-stamp|no-redirects|no-saved-core-context|ntp|ports|processes|radius-options|radius-server|root-authentication|saved-core-context|saved-core-files|scripts|services|static-host-mapping|syslog|tacplus-options|tacplus-server|time-zone|tracing|use-imported-time-zones)\b</string>
+			<key>name</key>
+			<string>constant.language.juniper.system</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(archive|console|file|host|source-address|time-format|user)\b</string>
+			<key>name</key>
+			<string>constant.language.juniper.system.syslog</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(apply-groups|apply-groups-except|dhcp|finger|ftp|netconf|outbound-ssh|service-deployment|ssh|telnet|web-management|xnm-clear-text|xnm-ssl)\b</string>
+			<key>name</key>
+			<string>constant.language.juniper.system.services</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(?:(?:(?:(?:\w{1,4}(?::\w{1,4}){7})|(?:(?!(?:.*\w(?::|$)){7,})(?:\w{1,4}(?::\w{1,4}){0,5})?::(?:\w{1,4}(?::\w{1,4}){0,5})?)))|(?:(?:(?:\w{1,4}(?::\w{1,4}){5}:)|(?:(?!(?:.*\w:){5,})(?:\w{1,4}(?::\w{1,4}){0,3})?::(?:\w{1,4}(?::\w{1,4}){0,3}:)?))?(?:(?:25[0-5])|(?:2[0-4][0-9])|(?:1[0-9]{2})|(?:[1-9]?[0-9]))(?:\.(?:(?:25[0-5])|(?:2[0-4][0-9])|(?:1[0-9]{2})|(?:[1-9]?[0-9]))){3})|(/\d{1,3}))</string>
 			<key>name</key>
 			<string>constant.numeric.juniper</string>

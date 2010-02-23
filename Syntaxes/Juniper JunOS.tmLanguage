@@ -20,7 +20,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>(access|^access-profile|^accounting-options|^apply-groups|^chassis|^class-of-service|^demux|^diameter|^ethernet-switching-options|^event-options|^firewall|^forwarding-options|^groups|^interfaces|^jsrc|^jsrc-partition|^poe|^policy-options|^protocols|^routing-instances|^routing-options|^security|^services|^snmp|^system|^virtual-chassis|^vlans)</string>
+			<string>\b(access|^access-profile|^accounting-options|^apply-groups|^chassis|^class-of-service|^demux|^diameter|^ethernet-switching-options|^event-options|^firewall|^forwarding-options|^groups|^interfaces|^jsrc|^jsrc-partition|^poe|^policy-options|^protocols|^routing-instances|^routing-options|^security|^services|^snmp|^system|^virtual-chassis|^vlans)</string>
 			<key>name</key>
 			<string>constant.language.juniper</string>
 		</dict>
@@ -32,9 +32,9 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(at-|fe-|ge-|xe-|se-|so-|ae-|\b(lo|fxp)[0-9]\b|t1-|es-|gr-|mo-|mt-|sp-)|[0-9]{1,2}/[0-9]{1,2}/[0-9]{1,2}</string>
+			<string>(at-|fe-|ge-|xe-|se-|so-|ae-|(lo|fxp)[0-9](.[0-9]{1,4})|t1-|es-|gr-|mo-|mt-|sp-|vlan(.[0-9]{1,4}))|[0-9]{1,2}/[0-9]{1,2}/[0-9]{1,2}</string>
 			<key>name</key>
-			<string>constant.character.interface.juniper</string>
+			<string>support.type.interface.juniper</string>
 		</dict>
 		<dict>
 			<key>match</key>

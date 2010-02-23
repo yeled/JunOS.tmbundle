@@ -12,6 +12,8 @@
 	<string>/\*\*|\{\s*$</string>
 	<key>foldingStopMarker</key>
 	<string>\*\*/|^\s*\}</string>
+	<key>keyEquivalent</key>
+	<string>@J</string>
 	<key>name</key>
 	<string>Juniper JunOS</string>
 	<key>patterns</key>
@@ -30,15 +32,21 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(at-|fe-|ge-|xe-|se-|so-|ae-|(lo|fxp)[0-9]|t1-|es-|gr-|mo-|mt-|sp-)|[0-9]{1,2}/[0-9]{1,2}/[0-9]{1,2}</string>
+			<string>(at-|fe-|ge-|xe-|se-|so-|ae-|\b(lo|fxp)[0-9]\b|t1-|es-|gr-|mo-|mt-|sp-)|[0-9]{1,2}/[0-9]{1,2}/[0-9]{1,2}</string>
 			<key>name</key>
 			<string>constant.character.interface.juniper</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(#.*$|//.*$|/\*)</string>
+			<string>##.*$</string>
 			<key>name</key>
-			<string>comment.documentation.juniper</string>
+			<string>comment.line.number-sign.juniper</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bdescription\b</string>
+			<key>name</key>
+			<string>comment.line.description.juniper</string>
 		</dict>
 		<dict>
 			<key>begin</key>

@@ -6,6 +6,8 @@
 	<array>
 		<string>junos</string>
 	</array>
+	<key>firstLineMatch</key>
+	<string>(^## Last commit|^version |system {)</string>
 	<key>foldingStartMarker</key>
 	<string>/\*\*|\{\s*$</string>
 	<key>foldingStopMarker</key>

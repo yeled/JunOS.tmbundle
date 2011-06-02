@@ -20,7 +20,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(access|^access-profile|^accounting-options|^apply-groups|^chassis|^class-of-service|^demux|^diameter|^ethernet-switching-options|^event-options|^firewall|^forwarding-options|^groups|^interfaces|^jsrc|^jsrc-partition|^poe|^policy-options|^protocols|^routing-instances|^routing-options|^security|^services|^snmp|^system|^virtual-chassis|^vlans)</string>
+			<string>\b(access|^access-profile|^accounting-options|^apply-groups|^chassis|^bridge-domains|^class-of-service|^demux|^diameter|^ethernet-switching-options|^event-options|^firewall|^forwarding-options|^groups|^interfaces|^jsrc|^jsrc-partition|^poe|^policy-options|^protocols|^routing-instances|^routing-options|^security|^services|^snmp|^system|^virtual-chassis|^vlans)</string>
 			<key>name</key>
 			<string>constant.language.juniper</string>
 		</dict>
